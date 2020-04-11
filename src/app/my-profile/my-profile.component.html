@@ -1,1 +1,44 @@
-<p>my-profile works!</p>
+<div class="container-fluid">
+    <div class="search">
+    <button class="btn btn-success"><a routerLink='/search-form' routerLinkActive='active'>Search an account</a></button>
+    </div>
+    <div *ngIf="user">
+          <div class="row">
+            <div class="col-md-3">
+             <div class="avatar">
+              <img src="{{user.avatar_url}}" class="img-circle" alt="">
+              <ul class="list-group" id="email">
+                <p class="names"><span class="glyphicon glyphicon-user"></span>  {{user.login}} <small>{{user.name}}</small></p>
+                <li class="list-group-item" *ngIf="user.email" id="emailocation">Email-Address: <a href="{{user.email}}" target="_blank"> {{user.email}} </a></li>
+                <li class="list-group-item" *ngIf="user.location" id="emailocation">Location: <b>{{user.location}}</b></li>
+                <li class="list-group-item" *ngIf="user.created_at" id="emailocation">Account created on: <b>{{user.created_at | date}}</b></li>
+              </ul>
+            </div>
+            </div>
+            <div class="col-md-2">
+    
+            </div>
+            <div class="col-sm-5" id="repo-part">
+    
+    
+                  <span  id="labels">{{user.followers}} Followers</span><br><br>
+                  &nbsp;
+                  <span  id="labels">{{user.following}} Following</span><br><br>
+                  &nbsp;
+                  <span  id="labels">{{user.public_repos}} Repositories</span><br>
+                  &nbsp;
+    
+                <br>
+                <br>
+                <p><a href="{{user.html_url}}" target="_blank" class="btn btn-success btn-sm" id="view"> View profile on Github &nbsp; <span class="glyphicon glyphicon-share-alt"></span></a></p>
+    
+    
+    
+            </div>
+            <div class="repo">
+            <app-repos></app-repos>
+            </div>
+        </div>
+      </div>
+    </div>
+    
