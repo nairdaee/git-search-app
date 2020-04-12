@@ -1,1 +1,67 @@
-<p>search-form works!</p>
+<div class="container-fluid">
+    <form (ngSubmit)="submitUser(name)" #userForm="ngForm">
+      <div class="form-group">
+        <div class="col-sm-10">
+        <p>  <input type="text" class="form-control" id="inputtext" id="input" placeholder="Enter Github username" [(ngModel)]="newSearch.name" name="name" keyUp="submitUser(name)" #name='ngModel'><br>
+          <button id="submit" class="btn btn-primary" (click)='submitUser(name)'>Search</button>
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="container-fluid">
+  <div *ngIf="user">
+  <p class="names"><span class="glyphicon glyphicon-user"></span> &nbsp; {{user.login}} &nbsp;<small>{{user.name}}</small></p>
+  
+        <div class="row">
+  
+          <div class="col-sm-3">
+            <img src="{{user.avatar_url}}" class="img-circle" alt=""><br>
+            <li class="list-group-item" *ngIf="user.created_at" id="emailocation">Account created on: <b>{{user.created_at | date}}</b></li>
+            <li class="list-group-item" *ngIf="user.email" id="emailocation">Email-Address: <a href="{{user.email}}" target="_blank"> {{user.email}} </a></li>
+            <li class="list-group-item" *ngIf="user.location" id="emailocation">Location: <b>{{user.location}}</b></li>
+  
+  
+          </div>
+          <div class="col-sm-3">
+  
+          </div>
+          <div class="col-sm-5" id="repo-part">
+  
+                <span  id="labels">{{user.followers}} Followers</span><br><br>
+                &nbsp;
+                <span  id="labels">{{user.following}} Following</span><br><br>
+                &nbsp;
+                <span  id="labels">{{user.public_repos}} Repositories</span><br>
+                &nbsp;
+  
+              <br>
+              <br>
+              <p><a href="{{user.html_url}}" target="_blank" class="btn btn-success btn-sm" id="view"> View profile on Github &nbsp; <span class="glyphicon glyphicon-share-alt"></span></a></p>
+  
+  
+          </div>
+  <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+                  <h3>Repositories</h3>
+  
+                  <div class="panel-body" *ngFor="let repo of repositoryService.repo ; let i = index" appHover>
+                    <p class="clearfix">
+                      <span class="repository"> {{repositoryService.repo[i].name}} </span>
+                    </p>
+                    <p class="description">{{repositoryService.repo[i].description}}</p>
+  
+                    <p class="creation-date"><b class="dates">Date created:</b> &nbsp;  {{repositoryService.repo[i].created_at|date}}</p>
+  
+                  <p>  <a href="{{repositoryService.repo[i].html_url}}" target="_blank" class="btn1 ">View this project on Github &nbsp;<span class="glyphicon glyphicon-share-alt"></span></a>
+  
+                    <a href="{{repositoryService.repo[i].homepage}}" target="_blank" *ngIf="repositoryService.repo[i].homepage" class="btn btn-sm btn-success pull-right buttons">View Deployed Page &nbsp;<span class="glyphicon glyphicon-share-alt"></span></a></p>
+                  </div>
+          </div>
+          <div class="col-md-2">
+            </div>
+          </div>
+          </div>
+        </div>
+  
