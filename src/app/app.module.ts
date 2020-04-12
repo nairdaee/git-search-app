@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule} from '@angular/common/http';
-import { AppRoutingModule } from './app-routing.module';
+import {RoutingModule} from './routing/routing.module';
 import { AppComponent } from './app.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { DateCountPipe } from './date-count.pipe';
@@ -24,7 +24,7 @@ import { HoverDirective } from './hover.directive';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RoutingModule,
     HttpClientModule,
     FormsModule
   ],

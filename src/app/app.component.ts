@@ -6,5 +6,5 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  rootPage : any = 'MyProfileComponent';
+  rootPage:any = 'MyProfileComponent';
 }
