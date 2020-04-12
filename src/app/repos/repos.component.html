@@ -1,1 +1,18 @@
-<p>repos works!</p>
+<div class="panel panel-success panel">
+    <div class="panel-heading heading">
+      <h3>Repositories</h3>
+    </div>
+    <div class="panel-body" *ngFor="let repo of repositoryService.repo ; let i = index" appHover>
+      <p class="clearfix">
+        <span class="repository"> {{repositoryService.repo[i].name}} </span>
+      </p>
+      <p class="description">{{repositoryService.repo[i].description}}</p>
+  
+      <p class="creation-date"><b class="dates">Date created:</b> &nbsp;  {{repositoryService.repo[i].created_at|date}}</p>
+  
+    <p>  <a href="{{repositoryService.repo[i].html_url}}" target="_blank" class="btn1 ">View this project on Github &nbsp;<span class="glyphicon glyphicon-share-alt"></span></a>
+  
+      <a href="{{repositoryService.repo[i].homepage}}" target="_blank" *ngIf="repositoryService.repo[i].homepage" class="btn btn-sm btn-success pull-right buttons">View Deployed Page &nbsp;<span class="glyphicon glyphicon-share-alt"></span></a></p>
+    </div>
+  </div>
+  

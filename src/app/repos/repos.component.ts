@@ -15,7 +15,7 @@ import{HttpClient} from '@angular/common/http';
 
 export class ReposComponent implements OnInit {
 
-  public username ='Brightmuk';
+  public username ='Nairdaee';
   repos:Repos;
   user:User;
   constructor(private profileService:ProfileService,public repositoryService:ProfileService) { }
