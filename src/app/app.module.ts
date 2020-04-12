@@ -10,6 +10,7 @@ import { ReposComponent } from './repos/repos.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { ProfileComponent } from './profile/profile.component';
 import {FormsModule} from '@angular/forms';
+import { HoverDirective } from './hover.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {FormsModule} from '@angular/forms';
     DateCountPipe,
     ReposComponent,
     SearchFormComponent,
-    ProfileComponent
+    ProfileComponent,
+    HoverDirective
   ],
   imports: [
     BrowserModule,
