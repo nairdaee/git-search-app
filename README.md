@@ -49,6 +49,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ### Live site
 
+https://nairdaee.github.io/git-search-app/
+
 ### License
 Copyright (c) {2020} Adrian Etenyi, Moringa School
 Licensed under the [MIT license](LICENSE)
