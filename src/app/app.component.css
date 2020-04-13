@@ -10,7 +10,17 @@
     font-size: 38pt;
     color: #97bc62ff;
     word-spacing: 5pt;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+@keyframes example {
+    0%   {color: #97bc62ff; left:0px; top:0px;}
+    25%  {color: #2c5f2d; left:30px; top:0px;}
+    50%  {color:#97bc62ff; left:90px; top:0px;}
+    75%  {color: #2c5f2d; left:0px; top:0px;}
+    100% {color:#97bc62ff; left:0px; top:0px;}
+  }
 .myprofile{
     background-color: #97bc62ff;
     color: #2c5f2d;
