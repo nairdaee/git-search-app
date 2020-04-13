@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule,Routes} from '@angular/router';
 
-import { AppComponent } from '../app.component';
-import { ReposComponent } from '../repos/repos.component';
 import { SearchFormComponent } from '../search-form/search-form.component';
 import { MyProfileComponent } from '../my-profile/my-profile.component';
 

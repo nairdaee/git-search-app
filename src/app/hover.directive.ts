@@ -7,7 +7,7 @@ export class HoverDirective {
 
   constructor(private repoColor:ElementRef) { }
   @HostListener('mouseenter') onMouseEnter(){
-    this.highlight('#E0FFFF');
+    this.highlight('#97bc62ff');
   }
   @HostListener('mouseleave') onMouseLeave(){
     this.highlight(null);

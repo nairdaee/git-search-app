@@ -4,7 +4,8 @@
         <div class="col-sm-10">
         <p>  <input type="text" class="form-control" id="inputtext" id="input" placeholder="Enter Github username" [(ngModel)]="newSearch.name" name="name" keyUp="submitUser(name)" #name='ngModel'><br>
           <button id="submit" class="btn btn-primary" (click)='submitUser(name)'>Search</button>
-          </p>
+          <a class="link2" routerLink='/my-profile' routerLinkActive='active'>GO TO HOME</a>
+        </p>
         </div>
       </div>
     </form>
@@ -28,11 +29,11 @@
           </div>
           <div class="col-sm-5" id="repo-part">
   
-                <span  id="labels">{{user.followers}} Followers</span><br><br>
+                <span  id="labels1">{{user.followers}} Followers</span><br><br>
                 &nbsp;
-                <span  id="labels">{{user.following}} Following</span><br><br>
+                <span  id="labels2">{{user.following}} Following</span><br><br>
                 &nbsp;
-                <span  id="labels">{{user.public_repos}} Repositories</span><br>
+                <span  id="labels3">{{user.public_repos}} Repositories</span><br>
                 &nbsp;
   
               <br>

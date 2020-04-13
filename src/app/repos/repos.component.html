@@ -1,7 +1,9 @@
 <div class="panel panel-success panel">
     <div class="panel-heading heading">
-      <h3>Repositories</h3>
+      <h3>REPOSITORIES</h3>
     </div>
+    <br>
+    <br>
     <div class="panel-body" *ngFor="let repo of repositoryService.repo ; let i = index" appHover>
       <p class="clearfix">
         <span class="repository"> {{repositoryService.repo[i].name}} </span>

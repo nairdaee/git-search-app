@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User} from '../user';
 import { Repos } from '../repos';
-import { HttpClient} from '@angular/common/http';
 import { ProfileService } from '../services/profile.service';
 
 @Component({

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Bangers|Girassol|Special+Elite&display=swap');
+
 img{
     border-radius: 10px;
     height:300px;
@@ -6,6 +8,10 @@ img{
   }
   #submit{
     margin-top: 5px;
+    background-color: #97bc62ff;
+    color: #2c5f2d;
+    border:none
+    
   }
   .panel-body{
     border: 1px solid grey;
@@ -41,16 +47,74 @@ img{
   h3{
     font-size: 40px;
     text-align: center;
-    background-color:#F0FFF0;
+    background-color: #97bc62ff;
     width:100%;
     padding:10px;
-    font-family: Georgia, serif;
+    color:#2c5f2d;
+    border-radius: 30pt;
+    letter-spacing: 4px;
+    font-family: 'Special Elite', cursive;
   }
   .btn1{
-    background-color: #B0E0E6;
+    background-color: #97bc62ff;
     padding:7px;
     border-radius: 5px;
     margin:5px;
     color:black;
   }
+  #labels1{
+    border-radius: 30pt;
+    background-color: #2c5f2d;
+    color: #97bc62ff;
+    padding:6px;
+    font-family: 'Acme', sans-serif;
+  }
+  #labels2{
+    border-radius: 30pt;
+    background-color: #2c5f2d;
+    color: #97bc62ff;
+    padding:6px;
+    font-family: 'Acme', sans-serif;
   
+  }
+  
+  #labels3{
+  
+    border-radius: 30pt;
+    background-color: #2c5f2d;
+    color: #97bc62ff;
+    padding:6px;
+    font-family: 'Acme', sans-serif;
+  }
+
+  #repo-part{
+    border-radius: 5px;
+    height: 200px;
+   background-color:  #97bc62ff;
+   padding:9px;
+   border: none;
+  }
+  #emailocation{
+    border-radius: 30pt;
+    border-width: 2px;
+    border-color: #97bc62ff;
+    background-color: #2c5f2d;
+    color: #97bc62ff;
+    padding:6px;
+    font-family: 'Acme', sans-serif;
+  }
+  .link2{
+    border-radius: 30pt;
+    background-color: #2c5f2d;
+    color: #97bc62ff;
+    padding:6px;
+    font-family: 'Acme', sans-serif;
+    float: right;
+  }
+  .panel-body{
+    border:2px solid #97bc62ff ;
+    border-radius: 6px;
+    padding:5px;
+    margin-bottom: 10px;
+    border-radius: 23px;
+  }

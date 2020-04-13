@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Bangers|Girassol|Special+Elite&display=swap');
+
 .panel-body{
-    border:0.5px solid grey;
+    border:2px solid #97bc62ff ;
     border-radius: 6px;
     padding:5px;
     margin-bottom: 10px;
+    border-radius: 23px;
   }
   .names{
     font-size: 30px;
@@ -25,13 +28,16 @@
   h3{
     font-size: 40px;
     text-align: center;
-    background-color:#F0FFF0;
+    background-color: #97bc62ff;
     width:100%;
     padding:10px;
-    font-family: Georgia, serif;
+    color:#2c5f2d;
+    border-radius: 30pt;
+    letter-spacing: 4px;
+    font-family: 'Special Elite', cursive;
   }
   .btn1{
-    background-color: #B0E0E6;
+    background-color: #97bc62ff;
     padding:7px;
     border-radius: 5px;
     margin:5px;

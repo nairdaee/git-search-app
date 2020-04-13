@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Bangers|Girassol|Special+Elite&display=swap');
+
+.container1{
+    background-color: #2c5f2d;
+}
+.heading{
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3pt;
+    font-size: 38pt;
+    color: #97bc62ff;
+    word-spacing: 5pt;
+}
+.myprofile{
+    background-color: #97bc62ff;
+    color: #2c5f2d;
+    border-radius: 30pt;
+    padding: 5px;
+}
+
+.link{
+    color: #2c5f2d;
+}

@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="search">
-    <button class="btn btn-success"><a routerLink='/search-form' routerLinkActive='active'>Search an account</a></button>
+    <a class="link2" routerLink='/search-form' routerLinkActive='active'><strong>SEARCH FOR AN ACCOUNT</strong></a>
     </div>
     <div *ngIf="user">
           <div class="row">
@@ -21,11 +21,11 @@
             <div class="col-sm-5" id="repo-part">
     
     
-                  <span  id="labels">{{user.followers}} Followers</span><br><br>
+                  <span  id="labels1">{{user.followers}} Followers</span><br><br>
                   &nbsp;
-                  <span  id="labels">{{user.following}} Following</span><br><br>
+                  <span  id="labels2">{{user.following}} Following</span><br><br>
                   &nbsp;
-                  <span  id="labels">{{user.public_repos}} Repositories</span><br>
+                  <span  id="labels3">{{user.public_repos}} Repositories</span><br>
                   &nbsp;
     
                 <br>

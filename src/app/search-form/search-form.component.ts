@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ProfileService } from '../services/profile.service';
 import { Search } from '../search';
 import { User } from '../user';
-import { HttpClient } from '@angular/common/http';
 import { Repos } from '../repos';
 
 @Component({
